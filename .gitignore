@@ -1,0 +1,6 @@
+Exploratory1_QC/
+CheckPoint Quantum Error Detection Game/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
