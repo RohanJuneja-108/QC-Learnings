@@ -192,7 +192,10 @@ Because you changed the name, the activation command changes too:
 ```powershell
 .\Exploratory1_QC\Scripts\Activate.ps1
 ```
-
+or if above shows the error Try 
+```powershell
+.\Exploratory1_QC\Scripts\activate
+```
 You will now see `(Exploratory1_QC)` in green at the start of your terminal line.
 
 ## 3. Tell VS Code to Use It
