@@ -1,0 +1,6 @@
+qubits,layers,status,wall_time_s,peak_tree_rss_mb,aer_time_s,required_memory_mb,method,return_code,error
+10,20,SUCCESS,1.5327,82.88,0.0018106,1,statevector,0,
+15,20,SUCCESS,1.2898,84.21,0.0320704,1,statevector,0,
+18,20,SUCCESS,1.6128,87.68,0.2594335,4,statevector,0,
+20,20,SUCCESS,2.4406,99.76,1.2216675,16,statevector,0,
+22,20,SUCCESS,4.0327,116.23,2.8238278,32,statevector,0,
