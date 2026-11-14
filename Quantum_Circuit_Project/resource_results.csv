@@ -1,0 +1,6 @@
+qubits,layers,elapsed_s,peak_observed_rss_mb,status,return_code,error
+10,50,1.62038,4.56,SUCCESS,0,
+15,50,1.31377,4.11,SUCCESS,0,
+20,50,5.72035,4.11,SUCCESS,0,
+22,50,23.00012,4.11,SUCCESS,0,
+24,50,30.05117,4.11,TIMEOUT,1,
