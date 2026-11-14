@@ -2,7 +2,6 @@
 from qiskit import QuantumCircuit
 import numpy as np
 
-
 def generate_circuit(
     num_qubits: int,
     num_layers: int,

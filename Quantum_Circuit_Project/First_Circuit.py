@@ -5,7 +5,7 @@ import time
 
 # Parameters we can change
 NUM_QUBITS = 3
-NUM_LAYERS = 5
+NUM_LAYERS = 7
 SHOTS = 1024
 
 # Circuit construction
@@ -18,6 +18,7 @@ for layer in range(NUM_LAYERS):
     for qubit in range(NUM_QUBITS - 1):
         qc.cx(qubit, qubit + 1)
 
+print("Actual circuit depth:", qc.depth())
 qc.measure_all()
 
 # Inspect circuit
