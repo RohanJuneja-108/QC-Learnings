@@ -26,16 +26,16 @@ def worker(n, layers):
     from Circuit_Generator import generate_circuit
 
     circuit = generate_circuit(n, layers, seed=42)
-    circuit.save_expectation_value(
-        Pauli("Z"), [0], label="z0"
-    )
+    circuit.save_expectation_value(Pauli("Z"), [0], label="z0")
 
     simulator = AerSimulator(
         method="statevector",
         device="CPU",
+        precision="double",
+        enable_truncation=False,
         max_memory_mb=256,
         max_parallel_threads=2,
-        fusion_enable=False
+        fusion_enable=False,
     )
 
     result = simulator.run(circuit, shots=1).result()
@@ -45,12 +45,22 @@ def worker(n, layers):
 
     meta = result.results[0].metadata
 
-    print(json.dumps({
-        "aer_time_s": meta.get("time_taken"),
-        "required_memory_mb": meta.get("required_memory_mb"),
-        "method": meta.get("method"),
-        "device": meta.get("device")
-    }), flush=True)
+    print(
+        json.dumps(
+            {
+                "aer_time_s": meta.get("time_taken"),
+                "required_memory_mb": meta.get("required_memory_mb"),
+                "method": meta.get("method"),
+                "device": meta.get("device"),
+                "precision": simulator.options.precision,
+                "simulated_qubits": meta.get("num_qubits"),
+                "active_input_qubits": meta.get("active_input_qubits"),
+                "theoretical_state_mb": (2**n * 16) / (1024**2),
+            }
+        ),
+        flush=True,
+    )
+
 
 
 def processes_in_tree(root):
