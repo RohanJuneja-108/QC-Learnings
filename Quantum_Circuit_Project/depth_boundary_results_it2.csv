@@ -1,0 +1,7 @@
+qubits,layers,status,wall_time_s,peak_tree_rss_mb,aer_time_s,required_memory_mb,method,return_code,error,repetition,actual_depth,gate_count
+18,700,SUCCESS,19.4219,157.76,17.1401911,4,statevector,0,,1,2815,37100
+18,700,SUCCESS,18.6632,158.0,15.9963984,4,statevector,0,,2,2815,37100
+18,750,SUCCESS,18.7327,162.55,16.5059171,4,statevector,0,,1,3015,39750
+18,750,SUCCESS,18.0913,162.4,16.0887747,4,statevector,0,,2,3015,39750
+18,800,SUCCESS,19.5762,167.37,17.4958441,4,statevector,0,,1,3215,42400
+18,800,SUCCESS,19.2757,167.91,17.1489966,4,statevector,0,,2,3215,42400
