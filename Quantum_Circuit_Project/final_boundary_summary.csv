@@ -1,0 +1,6 @@
+qubits,memory_mib,largest_validated_layers,largest_validated_depth,first_timeout_layers,boundary_state
+16,1.0,2560,10253,,NOT_REACHED_WITHIN_LAYER_CAP
+18,4.0,,,2410,UNCERTAIN
+20,16.0,370,1497,380,BRACKETED
+22,64.0,,,110,UNCERTAIN
+23,128.0,40,180,50,BRACKETED

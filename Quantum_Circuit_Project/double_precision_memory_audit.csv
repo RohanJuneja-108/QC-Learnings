@@ -1,0 +1,4 @@
+qubits,layers,status,wall_time_s,peak_tree_rss_mb,aer_time_s,required_memory_mb,method,return_code,error,simulated_qubits,active_input_qubits,precision,truncation,theoretical_memory_mb
+18,2,SUCCESS,1.4245,86.09,0.0418999,4,statevector,0,,18,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]",double,False,4.0
+20,2,SUCCESS,2.0503,98.37,0.5292996,16,statevector,0,,20,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",double,False,16.0
+22,2,SUCCESS,2.5566,146.28,1.3655368,64,statevector,0,,22,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]",double,False,64.0

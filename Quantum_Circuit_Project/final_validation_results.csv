@@ -1,0 +1,14 @@
+qubits,layers,actual_depth,trial,status,wall_time_s,peak_tree_rss_mb,error
+16,4096,16397,1,SUCCESS,30.3532,449.95,
+16,4096,16397,2,SUCCESS,27.6223,449.72,
+16,4096,16397,3,SUCCESS,28.6378,450.02,
+18,1920,7695,1,SUCCESS,50.5373,277.42,
+18,1920,7695,2,SUCCESS,52.1722,280.26,
+18,1920,7695,3,SUCCESS,52.1318,277.5,
+22,80,339,1,TIMEOUT,60.2068,157.08,"{""aer_time_s"": 58.3479618, ""required_memory_mb"": 64, ""simulated_qubits"": 22, ""active_input_qubits"": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21], ""method"": ""statevector"", ""device"": ""CPU"", ""precision"": ""double"", ""truncation"": false}
+"
+22,80,339,2,SUCCESS,48.9328,157.09,
+22,80,339,3,SUCCESS,49.0252,157.22,
+22,60,259,1,SUCCESS,36.6986,154.38,
+22,60,259,2,SUCCESS,35.7276,153.31,
+22,60,259,3,SUCCESS,41.9863,153.21,

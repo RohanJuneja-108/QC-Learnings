@@ -1,0 +1,7 @@
+qubits,layers,status,wall_time_s,peak_tree_rss_mb,aer_time_s,required_memory_mb,method,return_code,error,simulated_qubits,active_input_qubits,precision,truncation,theoretical_memory_mb,state_budget_mb
+20,2,SUCCESS,1.8642,98.53,0.2620003,16,statevector,0,,20,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",double,False,16.0,128
+22,2,SUCCESS,2.6942,146.48,1.4941538,64,statevector,0,,22,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]",double,False,64.0,128
+24,2,,1.2164,80.79,,,,1,"uantum MTech_1_8_2026\Hackathons\Quantum_Circuit_Project\Resource_Monitor_V2.py"", line 53, in worker
+    raise RuntimeError(str(result.status))
+RuntimeError: ERROR:  [Experiment 0] Insufficient memory to run circuit circuit-46 using the statevector simulator. Required memory: 256M, max memory: 128M
+",,None,,,256.0,128
